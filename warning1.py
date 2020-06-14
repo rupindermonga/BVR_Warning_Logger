@@ -13,7 +13,7 @@ def readingLog(file):
     new_product = ""
     for line in f:
         if "Scoring product" in line:
-            new_product = re.findall(r'"([^"]*)"', b)[-1]
+            new_product = re.findall(r'"([^"]*)"', line)[-1]
         if "WARNING - " in line:
             a, b = line.split("WARNING - ", 1)
             b = b.strip()
