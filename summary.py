@@ -5,6 +5,7 @@ path = '/media/rupinder/C49A5A1B9A5A0A76/Users/Rupinder/Desktop/BVR/Warning_code
 
 
 def readingLog(file):
+    start_time = time.time()
     updated_file = os.path.join(path, file) 
     with open(updated_file) as f:
         f = f.readlines()
@@ -72,8 +73,15 @@ def readingLog(file):
                 feature_dict_copy = copy.deepcopy(feature_dict)
         product_details[new_product] = [{"negative": negative_count, "neutral": neutral_count, "positive": positive_count}, feature_dict_copy]
     product_details.pop('')
-    return product_details
 
-final = readingLog('BVRScoring.2020-06-13_132713841860 (copy).log')
-# final = readingLog('check.log')
+    # df = pd.DataFrame.from_dict(product_details)
+    df = pd.DataFrame.from_dict(product_details, orient='index')
+    
+    df2 = pd.concat([df.drop([0,1], axis=1), df[0].apply(pd.Series), df[1].apply(pd.Series)], axis=1)
+
+    df2.to_csv("data.csv")
+    return time.time() - start_time
+
+final = readingLog('BVRScoring.2020-06-13_132713841860.log')
+
 print(final)
