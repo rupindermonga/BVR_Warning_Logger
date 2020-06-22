@@ -31,7 +31,7 @@ def readingLog(file):
                 position -= 1
             break
     for eachFeature in feature_list:
-        feature_dict[eachFeature] = {"negative": 0, "neutral": 0, "positive": 0}
+        feature_dict[eachFeature] = {"negative": 0, "neutral": 0, "positive": 0, "total": 0}
     feature_dict_copy = copy.deepcopy(feature_dict)
     for line in f:
         if "Scoring product" in line:
@@ -44,6 +44,7 @@ def readingLog(file):
                     if old_product != new_product:
                         feature_dict[eachFeature]["negative"] = 0
                     feature_dict[eachFeature]["negative"] += eachFeature_count
+                    feature_dict[eachFeature]["total"] = feature_dict[eachFeature]["negative"]
                 neg_count = line.find("negative: :") + len("negative: :")
                 if old_product != new_product:
                     negative_count = 0
@@ -55,6 +56,7 @@ def readingLog(file):
                     if old_product != new_product:
                         feature_dict[eachFeature]["neutral"] = 0
                     feature_dict[eachFeature]["neutral"] += eachFeature_count
+                    feature_dict[eachFeature]["total"] += feature_dict[eachFeature]["neutral"]
                 neu_count = line.find("neutral: :") + len("neutral: :")
                 if old_product != new_product:
                     neutral_count = 0
@@ -66,18 +68,16 @@ def readingLog(file):
                     if old_product != new_product:
                         feature_dict[eachFeature]["positive"] = 0
                     feature_dict[eachFeature]["positive"] += eachFeature_count
+                    feature_dict[eachFeature]["total"] += feature_dict[eachFeature]["positive"]
                 pos_count = line.find("positive: :") + len("positive: :")
                 if old_product != new_product:
                     positive_count = 0
                     old_product = new_product
                 positive_count += int(line[pos_count:pos_count+3].replace(" ","").replace(",",""))
-                
                 feature_dict_copy = copy.deepcopy(feature_dict)
         total_count = negative_count + neutral_count + positive_count
         product_details[new_product] = [{"total": total_count, "negative": negative_count, "neutral": neutral_count, "positive": positive_count}, feature_dict_copy]
     product_details.pop('')
-
-    # df = pd.DataFrame.from_dict(product_details)
     df = pd.DataFrame.from_dict(product_details, orient='index')
     
     df2 = pd.concat([df.drop([0,1], axis=1), df[0].apply(pd.Series), df[1].apply(pd.Series)], axis=1)
