@@ -2,8 +2,8 @@
 2020-06-13 13:27:30,347 - BVRScoring - INFO -            category.summary.csv computed        False
 2020-06-13 13:27:30,347 - BVRScoring - INFO -            category.summary.csv uploaded        False
 2020-06-13 13:27:30,347 - BVRScoring - INFO - Scoring product: "Kitchen knives","B01KTACCBK"
-2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: negative: :2, Performance:0, Handle sturdiness:0, Comfort:0
-2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: neutral: :4, Performance:0, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: negative: :2, Performance:10, Handle sturdiness:2, Comfort:5
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: neutral: :4, Performance:0, Handle sturdiness:3, Comfort:0
 2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: positive: :8, Performance:0, Handle sturdiness:0, Comfort:0
 2020-06-13 13:27:30,347 - BVRScoring - INFO - Scoring product: "Kitchen knives","B01KTACCB1"
 2020-06-13 13:27:30,347 - BVRScoring - WARNING - Key "product_uri" missing for product "B01KTACCBK"
@@ -25,14 +25,14 @@
 2020-06-13 13:27:31,292 - BVRScoring - INFO - Review not found in snapshot, creating a new snapshot
 2020-06-13 13:27:31,577 - BVRScoring - INFO - Found significant_mentions: negative:0, neutral:0, positive:1
 2020-06-13 13:27:31,577 - BVRScoring - INFO - Found significant_sentences: negative:0, positive:0
-2020-06-13 13:27:31,577 - BVRScoring - INFO - Found feature_mentions: negative: :3, Performance:0, Handle sturdiness:0, Comfort:0
-2020-06-13 13:27:31,577 - BVRScoring - INFO - Found feature_mentions: neutral: :3, Performance:0, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,577 - BVRScoring - INFO - Found feature_mentions: negative: :3, Performance:5, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,577 - BVRScoring - INFO - Found feature_mentions: neutral: :3, Performance:8, Handle sturdiness:0, Comfort:0
 2020-06-13 13:27:31,577 - BVRScoring - INFO - Found feature_mentions: positive: :9, Performance:0, Handle sturdiness:0, Comfort:0
 2020-06-13 13:27:31,577 - BVRScoring - INFO - Scoring review: "chris","December 29, 2018","SHARP SHARP"."5.0 out of 5 stars"
 2020-06-13 13:27:31,580 - BVRScoring - INFO - Review not found in snapshot, creating a new snapshot
 2020-06-13 13:27:31,784 - BVRScoring - INFO - Found significant_mentions: negative:0, neutral:0, positive:1
 2020-06-13 13:27:31,784 - BVRScoring - INFO - Found significant_sentences: negative:0, positive:0
-2020-06-13 13:27:31,784 - BVRScoring - INFO - Found feature_mentions: negative: :3, Performance:0, Handle sturdiness:0, Comfort:0
-2020-06-13 13:27:31,784 - BVRScoring - INFO - Found feature_mentions: neutral: :2, Performance:0, Handle sturdiness:0, Comfort:0
-2020-06-13 13:27:31,784 - BVRScoring - INFO - Found feature_mentions: positive: :10, Performance:0, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,784 - BVRScoring - INFO - Found feature_mentions: negative: :3, Performance:10, Handle sturdiness:5, Comfort:2
+2020-06-13 13:27:31,784 - BVRScoring - INFO - Found feature_mentions: neutral: :2, Performance:5, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,784 - BVRScoring - INFO - Found feature_mentions: positive: :10, Performance:5, Handle sturdiness:0, Comfort:0
 
