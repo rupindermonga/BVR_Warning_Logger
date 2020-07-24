@@ -1,0 +1,26 @@
+2020-06-13 13:27:29,833 - BVRScoring - INFO - Pulled data for category "Kitchen knives"
+2020-06-13 13:27:13,842 - BVRScoring - INFO - Logger ready
+2020-06-13 13:27:30,347 - BVRScoring - INFO -            category.summary.csv computed        False
+2020-06-13 13:27:30,347 - BVRScoring - INFO -            category.summary.csv uploaded        False
+2020-06-13 13:27:30,347 - BVRScoring - INFO - Scoring product: "Kitchen knives","B01KTACCBK"
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: negative: :2, Performance:5, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: neutral: :4, Performance:0, Handle sturdiness:2, Comfort:0
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: positive: :8, Performance:0, Handle sturdiness:3, Comfort:2
+2020-06-13 13:27:30,347 - BVRScoring - INFO - Scoring product: "Kitchen knives","B01KTACCB1"
+2020-06-13 13:27:30,347 - BVRScoring - WARNING - Key "product_uri" missing for product "B01KTACCBK"
+2020-06-13 13:27:30,347 - BVRScoring - INFO - Scoring review: "ChristenG","August 15, 2018","Fantastic Set!"."5.0 out of 5 stars"
+2020-06-13 13:27:30,404 - BVRScoring - INFO - Review not found in snapshot, creating a new snapshot
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found significant_mentions: negative:0, neutral:0, positive:1
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found significant_sentences: negative:0, positive:0
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: negative: :2, Performance:2, Handle sturdiness:5, Comfort:0
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: neutral: :4, Performance:0, Handle sturdiness:5, Comfort:0
+2020-06-13 13:27:31,103 - BVRScoring - INFO - Found feature_mentions: positive: :8, Performance:0, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,104 - BVRScoring - INFO - Scoring review: "Deb","August 29, 2018","Fantastic Stainless Steel Black Knife Set with Clear Block!"."5.0 out of 5 stars"
+2020-06-13 13:27:31,106 - BVRScoring - INFO - Review not found in snapshot, creating a new snapshot
+2020-06-13 13:27:31,289 - BVRScoring - INFO - Found significant_mentions: negative:0, neutral:0, positive:1
+2020-06-13 13:27:31,289 - BVRScoring - INFO - Found significant_sentences: negative:0, positive:0
+2020-06-13 13:27:31,289 - BVRScoring - INFO - Found feature_mentions: negative: :2, Performance:8, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,290 - BVRScoring - INFO - Found feature_mentions: neutral: :0, Performance:0, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,290 - BVRScoring - INFO - Found feature_mentions: positive: :5, Performance:0, Handle sturdiness:0, Comfort:0
+2020-06-13 13:27:31,290 - BVRScoring - INFO - Scoring review: "Skylar houghton","August 8, 2018","Very decent knife set"."5.0 out of 5 stars"
+
